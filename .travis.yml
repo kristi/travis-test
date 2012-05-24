@@ -6,4 +6,4 @@ notifications:
   disabled: true
 before_install:
  - gem install pygments.rb
- - ruby -e "require 'rubygems'; require 'pygments'"
+ - ruby -e "require 'rubygems'; require 'pygments.rb'"
