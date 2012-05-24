@@ -5,6 +5,7 @@ rvm:
 notifications:
   disabled: true
 before_install:
+ - gem install ffi
  - gem install pygments.rb
  - printenv
  - python --version
