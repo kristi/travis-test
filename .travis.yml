@@ -4,7 +4,7 @@ rvm:
 notifications:
   disabled: true
 before_install:
- - gem install rubypython=0.5.2
+ - gem install rubypython
  - python --version
  - echo "$GEM_HOME"
  - echo "$GEM_PATH"
