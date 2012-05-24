@@ -4,12 +4,11 @@ rvm:
 notifications:
   disabled: true
 before_install:
- - gem install rubypython
  - python --version
  - echo "$GEM_HOME"
  - echo "$GEM_PATH"
  - gem env
  - gem list
- - ls ~/.*
+ - gem install rubypython
  - ruby -e "require 'rubygems'; require 'rubypython'"
  - ruby -e "require 'rubygems'; require 'pygments.rb'"
