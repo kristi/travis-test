@@ -10,4 +10,5 @@ before_install:
  - python --version
  - gem list
  - ruby -e "require 'rubygems'; require 'ffi'"
+ - ruby -e "require 'rubygems'; require 'rubypython'"
  - ruby -e "require 'rubygems'; require 'pygments.rb'"
