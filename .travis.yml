@@ -7,7 +7,7 @@ notifications:
 before_install:
  - gem install ffi
  - gem install pygments.rb
- - printenv
  - python --version
- - which python
+ - gem list
+ - ruby -e "require 'rubygems'; require 'ffi'"
  - ruby -e "require 'rubygems'; require 'pygments.rb'"
