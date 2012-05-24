@@ -1,7 +1,6 @@
 language: ruby
 rvm:
   - 1.8.7
-  - 1.9.3
 notifications:
   disabled: true
 before_install:
@@ -12,6 +11,7 @@ before_install:
  - echo "$GEM_PATH"
  - gem env
  - gem list
+ - cat /home/vagrant/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb
  - ruby -e "require 'rubygems'; require 'ffi'" --debug
  - ruby -e "require 'rubygems'; require 'rubypython'" --debug
  - ruby -e "require 'rubygems'; require 'ffi'; require 'rubypython'"
