@@ -10,8 +10,9 @@ before_install:
  - python --version
  - echo "$GEM_HOME"
  - echo "$GEM_PATH"
+ - gem env
  - gem list
- - ruby -e "require 'rubygems'; require 'ffi'"
+ - ruby -e "require 'rubygems'; require 'ffi'" --debug
  - ruby -e "require 'rubygems'; require 'rubypython'" --debug
  - ruby -e "require 'rubygems'; require 'ffi'; require 'rubypython'"
  - ruby -e "require 'rubygems'; require 'pygments.rb'"
