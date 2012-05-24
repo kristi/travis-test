@@ -12,6 +12,6 @@ before_install:
  - cp -a /home/vagrant/.rvm/gems/ruby-1.8.7-p358/gems/ffi-1.0.11 /home/vagrant/ffi-1.0.11
  - gem uninstall -a ffi
  - gem install rubypython
- - diff -u /home/vagrant/.rvm/gems/ruby-1.8.7-p358/gems/ffi-1.0.11 /home/vagrant/ffi-1.0.11
+ - diff -r -u /home/vagrant/.rvm/gems/ruby-1.8.7-p358/gems/ffi-1.0.11/lib /home/vagrant/ffi-1.0.11/lib
  - ruby -e "require 'rubygems'; require 'rubypython'"
  - ruby -e "require 'rubygems'; require 'pygments.rb'"
