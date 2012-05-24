@@ -6,4 +6,7 @@ notifications:
   disabled: true
 before_install:
  - gem install pygments.rb
+ - printenv
+ - python --version
+ - which python
  - ruby -e "require 'rubygems'; require 'pygments.rb'"
