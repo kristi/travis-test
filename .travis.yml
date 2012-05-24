@@ -5,5 +5,5 @@ rvm:
 notifications:
   disabled: true
 before_install:
- - gem install pygments
+ - gem install pygments.rb
  - ruby -e "require 'rubygems'; require 'pygments'"
